@@ -1,0 +1,27 @@
+
+  <div id="form">
+    <form class="form-container">
+      <h1>Suscribirse</h1>
+      <div> 
+        <label for="Nombre"><b>Nombre</b></label>
+        <input type="text" placeholder="Nombre" name="nombre" required #nameInput="ngModel" [(ngModel)]="nombre">
+      </div>
+      <div>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Email" name="email" required #emailInput="ngModel" [(ngModel)]="email">
+      </div>
+      <label for="sexo"><b>Sexo</b></label>
+      <div>
+        <input type="radio" value="Mujer" name="sexo" #sexoInput="ngModel" [(ngModel)]="sexo">
+        <label for="html">Mujer</label><br>
+        <input type="radio" value="Hombre" name="sexo" #sexoInput="ngModel" [(ngModel)]="sexo">
+        <label for="css">Hombre</label><br>
+      </div>
+     <div>
+      <label for="fecha"><b>Fecha de Nacimiento</b></label>
+      <input type="date" placeholder="Fecha" name="fecha" required  #fechaInput="ngModel" [(ngModel)]="fecha">  
+    </div>
+    </form>
+    <a (click)="guardar()" [routerLink]="['/home']" class="btn btn-primary btn-lg" role="button">Suscribirse</a>
+
+  </div>

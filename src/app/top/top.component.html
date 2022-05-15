@@ -1,0 +1,19 @@
+<h1 class="text-center">Top #5 comics de Marvel</h1>
+<div class="card-columns">
+    <div class="card"  *ngFor="let h of heroes">
+      <img src={{h.src}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{h.nombre}}</h5>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="text-center">Top #5 comics de DC</h1>
+<div class="card-columns">
+    <div class="card"  *ngFor="let h of heroes2">
+      <img src={{h.src}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{h.nombre}}</h5>
+      </div>
+    </div>
+  </div>

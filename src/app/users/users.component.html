@@ -1,0 +1,17 @@
+<div class="container" >
+    <table class="greyGridTable">
+        <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Sexo</th>
+            <th>Fecha</th>
+        </tr>
+        <tr *ngFor="let i of usuarios">
+            <td>{{i.nombre}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.sexo}}</td>
+            <td>{{i.fecha}}</td>
+        </tr>
+        
+    </table>
+</div>

@@ -1,0 +1,14 @@
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: rgba(43, 159, 226, 0.535);
+}
+
+iframe{
+    margin: 20px;
+
+}
